@@ -1,0 +1,25 @@
+{
+
+    "configurations": [
+
+
+        {
+            "showDevDebugOutput": "parsed",
+            "cwd": "C:/Garima/Project/std_1/Build/debug/",
+            "executable": "C:/Garima/Project/std_1/Build/debug/STD1.elf",
+            "name": "Debug STM32",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            //"serverpath": "C:/Program Files (x86)/SEGGER/JLink_V642/JLinkGDBServerCL.exe",
+            //"preLaunchTask": "Build STM",
+            "device": "stm32h723",
+            "svdFile": "C:/Garima/Project/std_1/STM32H7x3.svd",
+            "configFiles": [
+                "C:/Garima/Project/std_1/stlink.cfg",
+                "C:/Garima/Project/std_1/stm32h7x.cfg"
+
+            ]
+        }
+    ]
+}

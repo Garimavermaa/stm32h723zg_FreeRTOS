@@ -1,0 +1,4 @@
+C:/Garima/Project/std_1/Build/debug/CMakeFiles/CMSIS.dir
+C:/Garima/Project/std_1/Build/debug/CMakeFiles/STD1.elf.dir
+C:/Garima/Project/std_1/Build/debug/CMakeFiles/edit_cache.dir
+C:/Garima/Project/std_1/Build/debug/CMakeFiles/rebuild_cache.dir
