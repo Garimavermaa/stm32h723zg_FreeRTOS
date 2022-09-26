@@ -1,16 +1,16 @@
 cmake_minimum_required(VERSION 3.5.0)
 set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/STM32H723ZG.cmake)
 project(STD1)
-set_property(SOURCE C:/Garima/Project/std_1/startup_stm32h723xx.s PROPERTY LANGUAGE C)
+set_property(SOURCE C:/Garima/Project/STM32H723ZG/startup_stm32h723xx.s PROPERTY LANGUAGE C)
 
 
-set(FREERTOS_DIR C:/Garima/Project/std_1/Middlewares/Third_Party/FreeRTOS/Source)
-set(DRIVERS_DIR C:/Garima/Project/std_1/Drivers)
+set(FREERTOS_DIR C:/Garima/Project/STM32H723zg/Middlewares/Third_Party/FreeRTOS/Source)
+set(DRIVERS_DIR C:/Garima/Project/STM32H723ZG/Drivers)
 
 if(${CMAKE_BUILD_TYPE} STREQUAL "debug")
-    set(BUILD_DIR C:/Garima/Project/std_1/Build/debug)
+    set(BUILD_DIR C:/Garima/Project/stm32h723zg/Build/debug)
 elseif(${CMAKE_BUILD_TYPE} STREQUAL "release")
-    set(BUILD_DIR C:/Garima/Project/std_1/Build/release)
+    set(BUILD_DIR C:/Garima/Project/stm32h723zg/Build/release)
 endif()
 
 file(GLOB_RECURSE USER_SOURCES "Core/Src/*.c")
@@ -25,12 +25,12 @@ file(
 
 add_library(
     CMSIS
-    C:/Garima/Project/std_1/Core/Src/system_stm32h7xx.c
-    C:/Garima/Project/std_1/startup_stm32h723xx.s
-    C:/Garima/Project/std_1/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.c
+    C:/Garima/Project/stm32h723zg/Core/Src/system_stm32h7xx.c
+    C:/Garima/Project/stm32h723zg/startup_stm32h723xx.s
+    C:/Garima/Project/stm32h723zg/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.c
 )
 
-include_directories(C:/Garima/Project/std_1/Core/Inc)
+include_directories(C:/Garima/Project/stm32h723zg/Core/Inc)
 include_directories(${DRIVERS_DIR}/STM32H7xx_HAL_Driver/Inc)
 include_directories(${DRIVERS_DIR}/CMSIS/Include)
 include_directories(${DRIVERS_DIR}/CMSIS/Device/ST/STM32H7xx/Include)
